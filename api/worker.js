@@ -69,10 +69,8 @@ export default {
                     [{ label: 'Pay ⭐️1', amount: 1 }],
                 );
             } else if (data.message && (text === '/about' || text === '/about@' + botUsername)) {
-                // Handle /about command
-                await this.sendAboutMessage(chatId, user, botApi);
+                await handleAboutCommand(chatId, user, botApi); // Using the imported function
             } else if (data.message && text && text.startsWith('/')) {
-                // Handle unknown commands
                 await this.sendDefaultMessage(chatId, botApi);
             } else {
                 let threshold = 1 - (RandomLevel / 10);
@@ -93,29 +91,6 @@ export default {
     },
 
     // New method for sending /about message
-    async sendAboutMessage(chatId, user, botApi) {
-        const photoUrl = "https://t.me/kajal_developer/59";
-        const caption = `<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
-
-‣ ᴍʏ ɴᴀᴍᴇ : <a href="https://t.me/${user.username}">${user.first_name}</a>
-‣ ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
-‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/kingvj01'>ᴛᴇᴄʜ ᴠᴊ</a> 
-‣ ʟɪʙʀᴀʀʏ : <a href='https://telegrafjs.org'>ᴛᴇʟᴇɢʀᴀғ (v4.12)</a> 
-‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://nodejs.org'>ɴᴏᴅᴇ.ᴊs v20</a> 
-‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://mongodb.com'>ᴍᴏɴɢᴏᴅʙ</a> 
-‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://heroku.com'>ʜᴇʀᴏᴋᴜ</a> 
-‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.5 [sᴛᴀʙʟᴇ]</b>`;
-
-        await botApi.sendPhoto({
-            chatId: chatId,
-            photo: photoUrl,
-            caption: caption,
-            parseMode: 'HTML',
-            disableWebPagePreview: true
-        });
-    },
-
-    // New method for sending default message for unknown commands
     async sendDefaultMessage(chatId, botApi) {
         await botApi.sendMessage(chatId, '<b>⚡ Use /Commands to see available options!</b>', null, 'HTML');
     }
