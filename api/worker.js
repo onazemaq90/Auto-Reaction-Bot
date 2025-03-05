@@ -4,6 +4,7 @@
  */
 
 import TelegramBotAPI from "./TelegramBotAPI.js";
+import { handleAboutCommand } from "./about.js";
 import { htmlContent, startMessage, donateMessage } from './constants.js';
 import { splitEmojis, returnHTML, getRandomPositiveReaction, getChatIds} from "./helper.js";
 
