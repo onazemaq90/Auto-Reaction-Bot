@@ -21,40 +21,102 @@ export const htmlContent = `
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telegram Auto Reaction Bot</title>
-<meta name="description" content="Single Developers presents an open-source Telegram Auto Reaction bot developed by Malith-Rukshan. Reacts to all messages received from chats automatically. Serverless deployment on Cloudflare.">
-<meta name="keywords" content="Telegram bot, auto reaction bot, open-source, Single Developers, Malith-Rukshan, Telegram auto reaction, serverless telegram bot, reaction automation">
+<title>Telegram Auto Reaction Bot 🚀</title>
+<meta name="description" content="An open-source Telegram Auto Reaction Bot by Malith-Rukshan. Automate emoji reactions with ease.">
+<meta name="keywords" content="Telegram bot, auto reaction bot, open-source, Telegram automation, reaction bot">
+
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 <style>
   body, html {
-    height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f4f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
   }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    background: #ffffff;
+    border: 2px solid #0881FD;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
   .logo {
-    width: 60%; margin-bottom: 20px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
   }
-  .title { margin-bottom: 20px; font-size: 34px; font-weight: bold; color: #333; text-align: center; }
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0881FD;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
   .button {
-    padding: 10px 20px; margin: 10px; font-size: 16px; cursor: pointer; text-align: center; color: #fff; border: none; border-radius: 15px;
-    transition: background-color 0.3s ease; display: inline-block; outline: none;
+    background-color: #0881FD;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .githubBtn { background-color: #0881FD; }
-  .githubBtn:hover { background-color: #0672E0; }
+
+  .button:hover {
+    background-color: #0672E0;
+  }
+
+  .github-section {
+    margin-top: 15px;
+  }
 </style>
 </head>
 <body>
 
-<div class="title">Telegram Auto Reaction Bot 🎉</div>
-<img class="logo" src="https://telegra.ph/file/cb59967120c6bda64580b.jpg">
+<div class="container">
+  <img class="logo" src="https://telegra.ph/file/cb59967120c6bda64580b.jpg" alt="Bot Logo">
+  
+  <div class="title">Auto Emoji Reaction Bot 🎉</div>
+  <div class="subtitle">Brighten your chats with fun emoji reactions!</div>
 
-<button class="button githubBtn" onclick="window.location='https://github.com/Malith-Rukshan/Auto-Reaction-Bot'">Open Source 🌱</button>
+  <button class="button" onclick="window.location='https://github.com/Malith-Rukshan/Auto-Reaction-Bot'">
+    View on GitHub 🌱
+  </button>
 
-<div style="margin: 5px;">
-  <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot" data-size="large" data-show-count="true">Star</a>
-  <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot/fork" data-size="large" data-show-count="true">Fork</a>
+  <div class="github-section">
+    <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot" 
+       data-size="large" data-show-count="true">⭐ Star</a>
+    <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot/fork" 
+       data-size="large" data-show-count="true">🍴 Fork</a>
+  </div>
+
+  <div class="github-section">
+    <a class="github-button" href="https://github.com/Malith-Rukshan" data-size="large">
+      Follow @Malith-Rukshan
+    </a>
+  </div>
 </div>
-<div>
-  <a class="github-button" href="https://github.com/Malith-Rukshan" data-size="large">Follow @Malith-Rukshan</a>
-</div>
+
 </body>
 </html>
 `;
