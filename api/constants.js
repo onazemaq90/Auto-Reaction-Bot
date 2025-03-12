@@ -21,11 +21,9 @@ export const htmlContent = `
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telegram Auto Reaction Bot 🚀</title>
-<meta name="description" content="An open-source Telegram Auto Reaction Bot by Malith-Rukshan. Automate emoji reactions with ease.">
-<meta name="keywords" content="Telegram bot, auto reaction bot, open-source, Telegram automation, reaction bot">
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<title>About | Auto Emoji Reaction Bot</title>
+<meta name="description" content="Learn more about the Telegram Auto Reaction Bot. A fun and interactive bot that adds emojis to your chats.">
+<meta name="keywords" content="Telegram bot, auto reaction bot, emoji bot, chatbot automation">
 
 <style>
   body, html {
@@ -35,38 +33,51 @@ export const htmlContent = `
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #f4f4f9;
+    background: #f0f2f5;
     color: #333;
     font-family: 'Arial', sans-serif;
   }
 
   .container {
-    text-align: center;
-    padding: 20px;
-    max-width: 400px;
+    max-width: 600px;
     background: #ffffff;
-    border: 2px solid #0881FD;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .logo {
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
   }
 
   .title {
     font-size: 28px;
-    font-weight: bold;
     color: #0881FD;
     margin-bottom: 10px;
+    font-weight: bold;
   }
 
-  .subtitle {
+  .description {
     font-size: 16px;
-    color: #666;
+    color: #555;
     margin-bottom: 20px;
+  }
+
+  .feature-list {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .feature-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .feature-list li::before {
+    content: '✅';
+    position: absolute;
+    left: 0;
+    color: #0881FD;
   }
 
   .button {
@@ -77,44 +88,44 @@ export const htmlContent = `
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
     width: 100%;
-    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
   }
 
   .button:hover {
     background-color: #0672E0;
   }
 
-  .github-section {
+  .footer {
     margin-top: 15px;
+    font-size: 14px;
+    color: #777;
   }
+
 </style>
 </head>
 <body>
 
 <div class="container">
-  <img class="logo" src="https://telegra.ph/file/cb59967120c6bda64580b.jpg" alt="Bot Logo">
-  
-  <div class="title">Auto Emoji Reaction Bot 🎉</div>
-  <div class="subtitle">Brighten your chats with fun emoji reactions!</div>
+  <div class="title">About Auto Emoji Reaction Bot 🎯</div>
+
+  <div class="description">
+    The Auto Emoji Reaction Bot is designed to make your Telegram conversations lively and engaging!  
+    Add it to your chats or groups and enjoy automatic emoji reactions to your messages.
+  </div>
+
+  <ul class="feature-list">
+    <li>⚡ Instant emoji reactions to your messages</li>
+    <li>🤖 Easy integration with Telegram groups and channels</li>
+    <li>🎯 Open-source project — customize it your way!</li>
+    <li>🌍 100% Serverless deployment via Cloudflare</li>
+  </ul>
 
   <button class="button" onclick="window.location='https://github.com/Malith-Rukshan/Auto-Reaction-Bot'">
-    View on GitHub 🌱
+    Learn More on GitHub 🚀
   </button>
 
-  <div class="github-section">
-    <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot" 
-       data-size="large" data-show-count="true">⭐ Star</a>
-    <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot/fork" 
-       data-size="large" data-show-count="true">🍴 Fork</a>
-  </div>
-
-  <div class="github-section">
-    <a class="github-button" href="https://github.com/Malith-Rukshan" data-size="large">
-      Follow @Malith-Rukshan
-    </a>
-  </div>
+  <div class="footer">Created with ❤️ by Malith-Rukshan</div>
 </div>
 
 </body>
