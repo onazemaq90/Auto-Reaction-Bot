@@ -35,29 +35,30 @@ export const htmlContent = `
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #f4f4f9;
-    color: #333;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: #fff;
     font-family: 'Arial', sans-serif;
   }
 
   .container {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     max-width: 400px;
     background: #ffffff;
-    border: 2px solid #0881FD;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
   }
 
   .logo {
-    width: 80px;
+    width: 90px;
     border-radius: 50%;
     margin-bottom: 20px;
+    border: 4px solid #0881FD;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: #0881FD;
     margin-bottom: 10px;
@@ -65,29 +66,35 @@ export const htmlContent = `
 
   .subtitle {
     font-size: 16px;
-    color: #666;
+    color: #555;
     margin-bottom: 20px;
   }
 
   .button {
-    background-color: #0881FD;
+    background: linear-gradient(135deg, #0881FD, #0056D2);
     color: #fff;
     border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 12px 28px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
     width: 100%;
     margin-bottom: 10px;
   }
 
   .button:hover {
-    background-color: #0672E0;
+    background: linear-gradient(135deg, #0672E0, #0048B8);
+    transform: scale(1.05);
   }
 
   .github-section {
     margin-top: 15px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 </style>
 </head>
