@@ -110,6 +110,11 @@ export const htmlContent = `
     View on GitHub 🌱
   </button>
 
+  <!-- New Telegram Bot Button -->
+  <button class="button" onclick="window.location='https://t.me/YourBotUsername'">
+    Open Telegram Bot 🤖
+  </button>
+
   <div class="github-section">
     <a class="github-button" href="https://github.com/Malith-Rukshan/Auto-Reaction-Bot" 
        data-size="large" data-show-count="true">⭐ Star</a>
