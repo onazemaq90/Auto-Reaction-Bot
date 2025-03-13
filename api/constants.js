@@ -22,7 +22,7 @@ export const htmlContent = `
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telegram Auto Reaction Bot 🚀</title>
-<meta name="description" content="An open-source Telegram Auto Reaction Bot by Malith-Rukshan. Automate emoji reactions with ease.">
+<meta name="description" content="An open-source Telegram Auto Reaction Bot by Sumit Developer. Automate emoji reactions with ease.">
 <meta name="keywords" content="Telegram bot, auto reaction bot, open-source, Telegram automation, reaction bot">
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -68,6 +68,13 @@ export const htmlContent = `
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
+  }
+
+  .developer-name {
+    font-size: 14px;
+    color: #0881FD;
+    margin-top: 15px;
+    font-weight: bold;
   }
 
   .button {
@@ -126,6 +133,10 @@ export const htmlContent = `
     <a class="github-button" href="https://github.com/Malith-Rukshan" data-size="large">
       Follow @Malith-Rukshan
     </a>
+  </div>
+
+  <div class="developer-name">
+    Developed by 🚀 <b>Sumit Developer</b>
   </div>
 </div>
 
